@@ -1,32 +1,4 @@
 
-import math
-
-class Point:
-    def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
-
-    def distance(self, p):
-        return math.sqrt((self.x-p.x)**2 + (self.y-p.y)**2 + (self.z-p.z)**2)
-
-    def move(self, d):
-       self.x += d
-       self.y += d
-       self.z += d
-
-    def __str__(self):
-        return "("+ str(self.x) + "," + str(self.y) + "," + str(self.z) + ")"
-
-class Triangle:
-    def __init__(self, p1, p2, p3):
-        self.p1 = p1
-        self.p2 = p2
-        self.p3 = p3
-
-    def __str__(self):
-        return "[" + str(self.p1) + "," + str(self.p2) + ","  + str(self.p3) + "]"
-
 #1
 class Car:
     def __init__(self, regPlate, maxSpeed):
